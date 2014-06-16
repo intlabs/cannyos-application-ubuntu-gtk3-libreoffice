@@ -37,8 +37,8 @@ WORKDIR /
 WORKDIR /CannyOS/Host
 RUN apt-get install -y libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev wget curl git
 RUN apt-get build-dep libreoffice -y
-RUN wget http://download.documentfoundation.org/libreoffice/src/4.2.5/libreoffice-4.2.5.1.tar.xz && \
-	tar xvfJ libreoffice-4.2.5.1.tar.xz && \
+RUN wget http://download.documentfoundation.org/libreoffice/src/4.2.5/libreoffice-4.2.5.2.tar.xz && \
+	tar xvfJ libreoffice-4.2.5.2.tar.xz && \
 	cd libreoffice* && \
 	./autogen.sh --enable-gtk3 --without-java && \
 	make && \
