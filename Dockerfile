@@ -45,13 +45,6 @@ RUN ./autogen.sh --disable-binfilter --disable-mozilla --without-help --without-
 RUN make
 RUN make install
 
-git clone git://anongit.freedesktop.org/libreoffice/core
-cd core
-./autogen.sh --disable-binfilter --disable-mozilla --without-help --without-myspell-dicts
-make
-make check
-
-
 #****************************************************
 #                                                   *
 #         ONLY PORT RULES BELLOW THIS               *
